@@ -1,0 +1,9 @@
+#slideshow {
+  display: flex;
+}
+
+#slideshow img {
+  width: 362px;
+  height: 452px;
+}
+
