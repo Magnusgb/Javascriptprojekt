@@ -3,6 +3,8 @@ html, body{
     margin: 0;
     font-family: 'Gotham Pro Regular', sans-serif;
     text-align: center;
+    font-size: 14px;
+    font-weight: 80;
 }
 
 #logo{
@@ -13,8 +15,16 @@ html, body{
 .menu a{
     background-color: transparent;
     color: black;
-    font-size: 14px;
-    font-weight: 80;
     padding: 4px 20px;
     text-decoration: none;
+}
+
+#forsidebillede{
+    width: 95%;
+    margin-top: 30px;
+}
+
+#overskrift{
+    font-weight: 20;
+    font-size: 24px;
 }
