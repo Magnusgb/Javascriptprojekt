@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-
 }
 
 .wrapper {
@@ -62,12 +61,13 @@
 #right {
     transition: transform 0.3s ease;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 0 transparent, 0 0 transparent, 0 0 15px -3px #0000001a, 0 4px 6px -2px #0000000d;
 
   }
   
   #right:hover {
     transform: translateY(-3px);
+    box-shadow: 0 0 transparent, 0 0 transparent, 0 0 15px -3px #0000001a, 0 4px 6px -2px #0000000d;
+
   }
 
 h2 {
