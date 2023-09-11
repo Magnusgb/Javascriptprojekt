@@ -1,16 +1,17 @@
-arrowIcons = document.querySelectorAll('.wrapper i');
+let arrowIcons = document.querySelectorAll('.wrapper i');
 let carousel = document.querySelector('.carousel1'); 
-firstImg = carousel.querySelectorAll("img") [0];
+let firstImg = carousel.querySelectorAll("img")[0];
+let firstImgWidth = firstImg.clientWidth;
 
-let firstImgWidth = firstImg.clientWidth + 14;
+for (let i = 0; i < arrowIcons.length; i++) {
 
+  arrowIcons[i].addEventListener("click", () => {
+    
+    if (arrowIcons[i].id == "left") {
+      carousel.scrollLeft -= firstImgWidth;
+    } else {
+      carousel.scrollLeft += firstImgWidth;
+    }
+  });
+}
 
-arrowIcons.forEach(icon => {
-   icon.addEventListener("click",() => {
-      if(icon.id == "left") {
-        carousel.scrollLeft -= firstImgWidth;
-      } else {
-        carousel.scrollLeft += firstImgWidth;
-      }
-   }); 
-})
