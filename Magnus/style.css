@@ -1,9 +1,60 @@
-#slideshow {
+* {
+  box-sizing: border-box;
+  margin: 1.5px;
+}
+
+.wrapper {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  min-height: 100vh;
 }
 
-#slideshow img {
-  width: 362px;
-  height: 452px;
+.wrapper .carousel1 {
+ display: flex;
+ gap: 20px;
+ margin-left: 1px;
+ margin-right: 5px;
 }
 
+.carousel1 img {
+ height: 420px;
+ object-fit: cover;
+}
+
+.carousel1 {
+  overflow: hidden;
+}
+
+.wrapper i:first-child{
+  left: 0px;
+}
+.wrapper i:last-child{
+  right: 0px;
+}
+
+.wrapper i {
+   background: white;
+   height: 45px;
+   width: 45px;
+   cursor: pointer;
+   font-size: 1.2rem;
+   text-align: center;
+   line-height: 46px;
+   border-radius: 50%;
+   position: absolute;
+   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: "Gotham Pro Regular", sans-serif;  ;
+}
+
+h3 {
+  font-size: 15px;
+}
