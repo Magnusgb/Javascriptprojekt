@@ -8,6 +8,7 @@ html, body{
     font-weight: 80;
 }
 
+/*NAVIGATION*/
 #logo{
     width: 160px;
     padding: 40px 0px;
@@ -18,6 +19,11 @@ html, body{
     color: #4b4b4b;
     padding: 5px 25px;
     text-decoration: none;
+}
+
+.menu img{
+    width: 20px;
+    cursor: pointer;
 }
 
 #forsidebillede{
@@ -45,4 +51,79 @@ html, body{
 
 #afstand{
     margin-top: 125px;
+}
+
+
+/*MIN KONTO*/
+.button{
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.button:hover{
+    color: white;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left:0; 
+    top:0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.modal-content{
+    background-color: whitesmoke;
+    margin: 20% auto;
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0 2px 4px 0;
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
+.closeBtn{
+    color: #ccc;
+    float: right;
+    font-size: 25px;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.contact-form-text{
+    width: 50%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 15px 20px;
+    outline: none;
+    background-color: #f0eeee;
+    border: 0px;
+    transition: 0.5s;
+    font-family: 'Gotham Pro Regular', sans-serif;
+}
+.contact-form-knap{
+    border: 0;
+    width: 50%;
+    background: black;
+    color: white;
+    font-size: 14px;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }

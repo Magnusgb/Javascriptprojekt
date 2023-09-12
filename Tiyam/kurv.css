@@ -1,0 +1,81 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: left;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Produktliste */
+#product-list {
+    list-style: none;
+    padding: 0;
+}
+
+#product-list li {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#product-list li button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#product-list li button:hover {
+    background-color: #555;
+}
+
+/* Indkøbskurv */
+h2 {
+    margin-top: 20px;
+}
+
+#cart {
+    list-style: none;
+    padding: 0;
+}
+
+#cart li {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Totalpris */
+#total-price {
+    font-weight: bold;
+    font-size: 18px;
+    /* styles.css */
+.cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#cart {
+    display: none;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+}
