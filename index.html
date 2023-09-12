@@ -24,12 +24,35 @@
           <a href="produkter.html">PRODUKTER</a>
           <a href="produkter.html">AMBER SEASON</a>
           <a href="produkter.html">GAVER</a>
+          <button id="modalBtn" class="button">
+            <img src="billeder/person.png" alt="min konto">
+          </button>
       </div>
     </nav>
 
-    <img src="billeder/forsidebillede.png" alt="forsidebillede" id="forsidebillede">
 
-    <div>
+    <div id="simpleModal" class="modal"> <!-- min konto -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="closeBtn">&times;</span>
+          <h2 id="overskrift">Log ind på din konto</h2>
+        </div>
+        <div class="modal-body">
+          <p class="brødtekst">Indtast dine login informationer nedenfor</p>
+          <form class="contact-form" method="post">
+            <input type="text" class="contact-form-text" placeholder="Email">
+            <input type="email" class="contact-form-text" placeholder="Kodeord">
+            <input type="submit" class="contact-form-knap" value="LOG IN">
+        </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <img src="billeder/forsidebillede.png" alt="forsidebillede" id="forsidebillede"> <!-- forside billede -->
+
+    <div> <!-- tekst -->
       <p class="brødtekst">100% ØKOLOGISK</p>
       <p id="overskrift">AMBER SEASON '23</p>
       <p class="brødtekst">Vi hylder sensommeren og høsten af vores skønne råvarer i årets Amber Season. Derfor har vi sammensat en limited edition <br> Amber Season Giftbag, som fuldender alle sensommerens solrige stunder.</p>

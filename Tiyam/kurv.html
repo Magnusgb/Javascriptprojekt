@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="kurv.css">
+    <script src="kurv.js"></script>
+
+    <title>Summerbird Indkøbskurv</title>
+    
+</head>
+<body>
+    <h1>Din Kurv</h1>
+    <div class="cart-icon" onclick="toggleCart()">🛒</div>
+    <div id="cart" class="hidden">
+        <!-- Indkøbskurvindhold her -->
+    </div>
+    <script src="script.js"></script> 
+    <!-- Produktliste -->
+    <ul id="product-list">
+        <li data-id="1">Liquorice Dragée - 60,00 kr <button onclick="addToCart(1)">Tilføj til kurv</button></li>
+        <li data-id="2">Amber Caramel - 82,00 kr <button onclick="addToCart(2)">Tilføj til kurv</button></li>
+        <li data-id="3">Amber Season Giftbag - 274,00 kr <button onclick="addToCart(3)">Tilføjet til kurv</button>
+            <img src="amber-season.jpg" alt="Valgte produkt"width="100" height="100">
+    </ul>
+
+    <!-- Indkøbskurv -->
+    <h2>Indkøbskurv</h2>
+    <ul id="cart">
+        <!-- Kurvens indhold vil blive tilføjet her dynamisk -->
+    </ul>
+
+    <!-- Totalpris -->
+    <p>Totalpris: kr. <span id="total-price">0.00</span></p>
+
+    <script>
+        // Indkøbskurvarray
+        const cart = [];
+
+        // Funktion til at tilføje et produkt til kurven
+        function addToCart(productId) {
+            // Find produktet baseret på productId (i en rigtig applikation ville du hente produktdata fra en database)
+            const product = { id: productId, name: "Produktnavn", price: 0.00 };
+
+            // Tilføj produktet til indkøbskurven
+            cart.push(product);
+
+            // Opdater kurven på siden
+            displayCart();
+        }
+
+        // Funktion til at vise indkøbskurven
+        function displayCart() {
+            const cartList = document.getElementById("cart");
+            const totalPrice = document.getElementById("total-price");
+
+            // Fjern eksisterende indhold fra kurven
+            cartList.innerHTML = "";
+
+            // Beregn den samlede pris
+            let total = 0;
+
+            // Loop gennem produkterne i kurven
+            for (const product of cart) {
+                const li = document.createElement("li");
+                li.textContent = `Produkt: ${product.name}, Pris: $${product.price}`;
+                cartList.appendChild(li);
+
+                // Opdater den samlede pris
+                total += product.price;
+            }
+
+            // Opdater den samlede pris på siden
+            totalPrice.textContent = total.toFixed(2);
+        }
+    </script>
+        <div class="cart-icon" onclick="toggleCart()">🛒</div>
+        <div id="cart" class="hidden">
+            <!-- Indkøbskurvindhold her -->
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
