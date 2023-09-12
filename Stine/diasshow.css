@@ -1,16 +1,16 @@
-.items_container{
-    align-items: center;
-    text-align: center;
-   
-}
+#items_container {
+    display: flex;
+    justify-content: center; 
+ 
+  }
 .item{
-    float: left; 
+    float: center; 
     padding: 10px;
     margin: 5px;
 }
 
 .item > img{
-    width: 430px;
+    width: 440px;
     height: auto;
 
 }
@@ -21,5 +21,17 @@
     text-align: center;
     margin-top: 10px;
     
+}
+
+.item h1{
+    font-size: 25px;
+    margin-top: 5px;
+    font-family: 'Chronicle Display Regular', serif;
+}
+
+.item h2{
+    font-size: 20px;
+    font-family: 'Gotham Pro Regular', sans-serif;
+
 }
 
