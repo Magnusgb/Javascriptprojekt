@@ -65,7 +65,6 @@ produkter.forEach((produkt) => {
       <h3>${produkt.navn}</h3>
       <img src="${produkt.billede}" alt="${produkt.navn}" class="produkt-billede">
       <p>Pris: ${produkt.pris.toFixed(2)} kr.</p>
-      <button onclick="tilføjTilKurv(${produkt.id})">Tilføj til kurv</button>
   `;
   produktContainer.appendChild(produktDiv);
 });
