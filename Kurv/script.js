@@ -1,4 +1,3 @@
-// Get DOM Elements
 const modal = document.querySelector('#my-modal1');
 const modalBtn = document.querySelector('#modal-btn1');
 const closeBtn = document.querySelector('.close1');
@@ -7,33 +6,27 @@ const closeBtn = document.querySelector('.close1');
 modalBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal);
 window.addEventListener('click', outsideClick);
-
 // Open
 function openModal() {
   modal.style.display = 'block';
 }
-
 // Close
 function closeModal() {
   modal.style.display = 'none';
 }
-
 // Close If Outside Click
 function outsideClick(e) {
   if (e.target == modal) {
     modal.style.display = 'none';
   }
 }
-
 // script.js
 const produkter = [
   { id: 1, navn: "Amber Season Giftbag", pris: 274, billede: "amber-season.jpg" },
   { id: 2, navn: "Amber Caramel", pris: 82.00, billede: "amber-caramel.jpg" },
   { id: 3, navn: "Liquorice Drageé", pris: 60.00, billede: "lisquorice.jpg" },
 ];
-
 const kurvVarer = [];
-
 function tilføjTilKurv(produktId) {
   const produkt = produkter.find((p) => p.id === produktId);
   if (produkt) {
@@ -41,12 +34,10 @@ function tilføjTilKurv(produktId) {
       opdaterKurv();
   }
 }
-
 function opdaterKurv() {
   const kurvVarerListe = document.getElementById("kurv-varer");
   const totalPris = document.getElementById("total-pris");
   let total = 0;
-
   kurvVarerListe.innerHTML = "";
   kurvVarer.forEach((vare) => {
       const li = document.createElement("li");
@@ -54,17 +45,14 @@ function opdaterKurv() {
       kurvVarerListe.appendChild(li);
       total += vare.pris;
   });
-
   totalPris.textContent = `${total.toFixed(2)} kr.`;
 }
-
 const betalingsKnap = document.getElementById("betaling-knap");
 betalingsKnap.addEventListener("click", () => {
   alert("Din ordre er blevet sendt!");
   kurvVarer.length = 0; // Tøm kurven
   opdaterKurv();
 });
-
 // Generer produktliste
 const produktContainer = document.querySelector(".produkt-liste");
 produkter.forEach((produkt) => {
@@ -78,6 +66,5 @@ produkter.forEach((produkt) => {
   `;
   produktContainer.appendChild(produktDiv);
 });
-
 // Initialiser kurv
 opdaterKurv();

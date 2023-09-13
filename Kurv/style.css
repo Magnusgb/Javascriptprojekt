@@ -26,13 +26,6 @@
   width: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
-  background: #f4f4f4;
-  font-size: 17px;
-  line-height: 1.6;
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
 }
 
 .modal-content1 {
@@ -46,10 +39,6 @@
 .modal-header1 h2,
 .modal-footer1 h3 {
   margin: 0;
-}
-
-h2 {
-  text-align: center;
 }
 
 .modal-header1 {
@@ -67,8 +56,8 @@ h2 {
 
 .modal-footer1 {
   background: var(--modal-color);
-  padding: 20px;
-  color: #000000;
+  padding: 10px;
+  color: #fff;
   text-align: center;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -88,7 +77,7 @@ h2 {
   cursor: pointer;
 }
 
-@keyframes modalopen1 {
+@keyframes modalopen {
   from {
     opacity: 0;
   }
