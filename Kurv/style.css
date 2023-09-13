@@ -29,11 +29,14 @@
 }
 
 .modal-content1 {
-  margin: 10% auto;
   width: 30%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
   animation-name: modalopen;
   animation-duration: var(--modal-duration);
+  float: right;
+  height: 100%;
+  background-color: white;
+
 }
 
 .modal-header1 h2,
@@ -42,9 +45,9 @@
 }
 
 .modal-header1 {
-  background: var(--modal-color);
+  background-color: white;
   padding: 15px;
-  color: #fff;
+  color: #000000;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -64,10 +67,10 @@
 }
 
 .close1 {
-  color: #ccc;
+  color: #000000;
   float: right;
   font-size: 30px;
-  color: #fff;
+  color: #000000;
 }
 
 .close1:hover,
