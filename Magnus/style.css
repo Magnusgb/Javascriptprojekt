@@ -1,34 +1,28 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .wrapper .carousel1 {
  display: flex;
- gap: 20px;
  scroll-behavior: smooth;
+ overflow: hidden;
 }
 
 .carousel1 img {
- height: 420px;
+ height: 407px;
  object-fit: cover;
+ width: auto;
+ padding: 0px 15px 15px;
 }
-
-.carousel1 {
-  overflow: hidden;
-}
-
 
 .wrapper i:first-child{
   left: 0px;
+  display: none;
 }
 .wrapper i:last-child{
   right: 0px;
@@ -44,9 +38,7 @@
    line-height: 50px;
    border-radius: 50%;
    position: absolute;
-
 }
-
 #left {
   transition: transform 0.3s ease;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -54,7 +46,7 @@
 }
 
 #left:hover {
-  transform: translateY(-3px) rotate(180deg);
+  transform: translateY(-3px);
   box-shadow: 0 0 transparent, 0 0 transparent, 0 0 15px -3px #0000001a, 0 4px 6px -2px #0000000d;
 }
 
@@ -67,16 +59,19 @@
   #right:hover {
     transform: translateY(-3px);
     box-shadow: 0 0 transparent, 0 0 transparent, 0 0 15px -3px #0000001a, 0 4px 6px -2px #0000000d;
-
   }
 
 h2 {
-  margin-top: 10px;
   font-size: 20px;
-  margin-bottom: 10px;
-  font-family: "Gotham Pro Regular", sans-serif;  ;
+  padding: 0px 15px 15px;
+  margin: 0px;
+  margin-top: -5px;
+  margin-bottom: -10px; 
+
 }
 
 h3 {
   font-size: 15px;
+  padding: 0px 15px 15px;
+  margin: 0px;
 }
