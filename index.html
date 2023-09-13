@@ -33,10 +33,10 @@
         <img src="billeder/mandikon.png" alt="min konto"></img>
       </button>
       <img src="billeder/søgeikon.png" alt="søgefunktion" id="søgeikon"></img>
-      <button id="modal-btn" class="button">
+      <button id="modal-btn1" class="button1">
         <img src="billeder/kurvikon.png" alt="indkøbskurv"></img>
       </button>
-  </div>
+    </div>
 
 
     <div id="simpleModal" class="modal"> <!-- min konto -->
@@ -55,10 +55,32 @@
         </div>
       </div>
     </div>
-    <body>
+    
     <script src="script.js"></script>
 
-    
+    <div id="my-modal1" class="modal1"> <!-- min kurv -->
+      <div class="modal-content1">
+        <div class="modal-header1">
+          <span class="close1">&times;</span>
+          <h3 id="overskrift">Min kurv</h3>
+        </div>
+        <div class="modal-body1">
+          <div class="produkt-liste">
+            <!-- Produktliste her -->
+          </div>
+          <div class="kurv">
+            <h2>Din ordre</h2>
+            <ul id="kurv-varer">
+                Indhold af kurven her
+            </ul>
+            <p>Totalpris: <span id="total-pris">0,00 kr.</span></p>
+            <button id="betaling-knap">Betaling</button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="kurv.js" defer></script>
 
     <img src="billeder/forsidebillede.png" alt="forsidebillede" id="forsidebillede"> <!-- forside billede -->
 
