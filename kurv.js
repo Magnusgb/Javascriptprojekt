@@ -1,6 +1,5 @@
 console.log(123)
 
-
 const modal1 = document.querySelector('#my-modal1');
 const modalBtn1 = document.querySelector('#modal-btn1');
 const closeBtn1 = document.querySelector('.close1');
@@ -24,3 +23,4 @@ function outsideClick1(e) {
     modal1.style.display = 'none';
   }
 }
+
