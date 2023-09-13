@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script> 
+</head>
+<body>
+  <button id="modal-btn" class="button">Ikon</button>
+
+  <div id="my-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Kurv</h2>
+      </div>
+      <div class="modal-body">
+        <div class="produkt-liste">
+          <!-- Produktliste her -->
+      </div>
+      <div class="kurv">
+          <h2>Din ordre</h2>
+          <ul id="kurv-varer">
+              <!-- Indhold af kurven her -->
+          </ul>
+          <p>Totalpris: <span id="total-pris">0,00 kr.</span></p>
+          <button id="betaling-knap">Betaling</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

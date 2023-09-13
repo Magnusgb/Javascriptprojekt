@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+  
 }
 
 h1 {
@@ -21,10 +22,8 @@ h1 {
     padding: 10px;
     margin: 10px;
     text-align: center;
-    
     }
     
-
 
 .kurv {
     border: 1px solid #ddd;
@@ -54,3 +53,8 @@ button:hover {
     height: auto;
 }
 
+.modal-content {
+    background-color: white;
+    width: 30%;
+    float: right;
+}
