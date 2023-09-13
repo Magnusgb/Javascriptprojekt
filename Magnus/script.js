@@ -37,8 +37,3 @@ for (let i = 0; i < arrowIcons.length; i++) {
     }
   });
 }
-
-
-
-
- 
