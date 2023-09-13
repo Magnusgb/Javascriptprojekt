@@ -33,7 +33,7 @@ window.addEventListener("load", function(){ //funktion der udføres efter load//
         
 
 
-    //teksten og Prisen under billederne/produkterne, værdierne i viser hvilket billede der skrives under//
+    //Teksten og prisen under billederne/produkterne, værdierne i viser hvilket billede der skrives under//
         if (i === 0) {
             text.textContent = "Amber Season Giftbag";
          }
