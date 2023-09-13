@@ -72,10 +72,6 @@ html, body{
     border: 0;
 }
 
-.button:hover{
-    color: white;
-}
-
 .modal{
     display: none;
     position: fixed;
