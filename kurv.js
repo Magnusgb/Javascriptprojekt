@@ -19,7 +19,7 @@ function closeModal1() {
 }
 // Close If Outside Click
 function outsideClick1(e) {
-  if (e.target == modal) {
+  if (e.target == modal1) {
     modal1.style.display = 'none';
   }
 }
