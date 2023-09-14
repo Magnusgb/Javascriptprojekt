@@ -27,7 +27,7 @@ html, body{
     margin-top: 35px;
 }
 
-#overskrift{
+.overskrift {
     font-weight: 20;
     font-size: 35px;
     color: black;
