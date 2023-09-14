@@ -28,7 +28,7 @@ let billeder = [
 
 let txt = "";
 billeder.forEach(myFunction);
-function myFunction(value, index, array) {
+function myFunction(value, array) {
   txt += "<img src='"+ value + "'>";
   document.getElementById("txt").innerHTML += txt;
 }
