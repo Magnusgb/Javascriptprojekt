@@ -4,6 +4,7 @@ arrowIcons = document.querySelectorAll('.wrapper i');
 
 let firstImg = carousel.querySelectorAll("img")[0];
  
+
 const showHideIcons = () => {
 if(carousel.scrollLeft == 0){
   arrowIcons[0].style.display = "none";
