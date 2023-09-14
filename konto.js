@@ -28,3 +28,16 @@ function outsideClick(e){
         modal.style.display = 'none';
     }
 }
+
+const mail = ["johndoe@gmail.dk", "loremipsum@mail.dk", "tiyam@gmail.com", "stine@gmail.dk", "emma@gmail.com"];
+
+mail.push("tiyam@gmail.com")
+console.log(mail);
+
+if (mail[0]=="tiyam@gmail.com") {
+    text ="Korrekt, Logger ind!"
+} else {
+    text = "Forkert, prøv igen"
+}
+
+

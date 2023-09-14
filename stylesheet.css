@@ -199,12 +199,18 @@ html, body{
     margin: 20px;
 }
 
+#txt img {
+    height: 200px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
 /*DIASSHOW*/
 #items_container {
     display: flex;
     justify-content: center; 
- 
   }
+  
 .item{
     padding: 10px;
     margin: 5px;
@@ -213,7 +219,6 @@ html, body{
 .item > img{
     width: 440px;
     height: auto;
-
 }
  
 
@@ -323,3 +328,4 @@ h2{
       transform: translateY(-3px);
       box-shadow: 0 0 transparent, 0 0 transparent, 0 0 15px -3px #0000001a, 0 4px 6px -2px #0000000d;
     }
+
