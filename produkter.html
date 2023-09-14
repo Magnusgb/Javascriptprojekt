@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" type="text/css" href="Fonts/Gotham Pro Regular.ttf">
     <link href="https://fonts.cdnfonts.com/css/chronicle-display" rel="stylesheet">
-
   </head>
 
   <body>
@@ -27,12 +26,14 @@
       </div>
     </nav>
 
-    <div class="ikoner">
-        <button id="modalBtn" class="button">
-            <img src="billeder/mandikon.png" alt="min konto">
-        </button>
-        <img src="billeder/søgeikon.png" alt="søgefunktion" id="søgeikon"></img>
+    <div class="ikoner"> <!-- ikoner -->
+      <button id="modalBtn" class="button">
+        <img src="billeder/mandikon.png" alt="min konto"></img>
+      </button>
+      <img src="billeder/søgeikon.png" alt="søgefunktion" id="søgeikon"></img>
+      <button id="modal-btn1" class="button1">
         <img src="billeder/kurvikon.png" alt="indkøbskurv"></img>
+      </button>
     </div>
 
     <div id="simpleModal" class="modal"> <!-- min konto -->
@@ -52,7 +53,24 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="konto.js"></script>
+
+
+    <div id="my-modal1" class="modal1"> <!-- min kurv -->
+      <div class="modal-content1">
+        <div class="modal-header1">
+          <span class="close1">&times;</span>
+          <h3 id="overskrift2">Min kurv</h3>
+        </div>
+        <span class="streg"></span>
+        <div class="modal-body1">
+          <p id="tekst2">Din kurv er tom</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="kurv.js" defer></script>
+
 
     <div id="afstand"> <!-- tekst -->
       <p id="overskrift">Vores sortiment</p>
