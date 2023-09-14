@@ -31,13 +31,20 @@ function outsideClick(e){
 
 const mail = ["johndoe@gmail.dk", "loremipsum@mail.dk", "tiyam@gmail.com", "stine@gmail.dk", "emma@gmail.com"];
 
-mail.push("tiyam@gmail.com")
-console.log(mail);
+function logInd() {
+    const søgtEmail = document.getElementById("email").value;
+    let erFundet = false;
 
-if (mail[0]=="tiyam@gmail.com") {
-    text ="Korrekt, Logger ind!"
-} else {
-    text = "Forkert, prøv igen"
-}
-
+    for (let i = 0; i < mail.length; i++) {
+      if (mail[i] === søgtEmail) {
+        erFundet = true;
+        break;
+      }
+    }
+    if (erFundet) {
+      alert("E-mailen er korrekt. Logget ind!");
+    } else {
+      alert("E-mailen blev ikke fundet. Prøv igen.");
+    }
+  }
 
